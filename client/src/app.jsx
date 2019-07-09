@@ -37,8 +37,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='recommendations-wrapper'>
-        <h2 id='recommendations-title'>Community Members Who Viewed Vidda Pro Long Pants - Men's also viewed</h2>
+      <div className='rec-wrapper'>
+        <h2 id='rec-title'>Community Members Who Viewed Vidda Pro Long Pants - Men's also viewed</h2>
         <RecItems items={this.state.items} />
       </div>
     )
