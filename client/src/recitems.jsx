@@ -10,10 +10,10 @@ class RecItems extends React.Component{
   render() {
 
     return(
-      <span>
+      <div className='items-wrapper'>
 
       {this.props.items.map( (item, index) => <Item  item={item} key={index} /> )}
-      </span>
+      </div>
     )
   }
 
