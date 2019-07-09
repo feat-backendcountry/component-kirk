@@ -10,9 +10,10 @@ class Item extends React.Component{
 
   render() {
     return(
-      <div className='item'>
+      <div className='recItem'>
         <img src={this.state.image} className='image-main' />
-        <div>{this.props.item.brand}</div>
+        <div className='brandName'>{this.props.item.brand}</div>
+        <div className='itemName'>{this.props.item.name}</div>
 
       </div>
     )
