@@ -1,24 +1,21 @@
 import React from 'react';
 
-class Item extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-      image: this.props.item.images[0]
-    }
-  }
+function Item(props) {
 
-  render() {
-    return(
-      <div className='recItem'>
-        <img src={this.state.image} className='image-main' />
-        <div className='brandName'>{this.props.item.brand}</div>
-        <div className='itemName'>{this.props.item.name}</div>
-
+  return (
+    <div className='rec-item-showmore'>
+      <div className='rec-item-wrapper'>
+        <a href='#' title={`${props.item.brand} ${props.item.name}`} className='rec-item' >
+          <img src={props.item.images[0]} className='image-main' />
+          <div className='item-description'>
+            <div className='brand-name'>{props.item.brand}</div>
+            <div className='item-name'>{props.item.name}</div>
+          </div>
+          <div className='item-offers'>${props.item.price}</div>
+        </a>
       </div>
-    )
-  }
-
+    </div>
+  )
 }
 
 export default Item;
