@@ -14,12 +14,14 @@ const sizeValUsArr = ['28', '30', '32', '34', '36', '38'];
 
 const sizeValUsEuArr = ['US 29/EU 44', 'US 30-31/EU 46', 'US 32/EU 48', 'US 33-34/EU 50'];
 
+const starRatingArr = [4, 4.5, 5];
+
 const s3bucket = 'https://cf-simple-s3-origin-cloudfrontfors3-846267517976.s3.amazonaws.com/'
 
 const imagesArray = [
   [
     s3bucket + 'backcountry-jordanelle-tech/grapeleaf.jpg',
-    s3bucket + 'backcountry-jordanelle-tech/pavment.jpg'
+    s3bucket + 'backcountry-jordanelle-tech/pavement.jpg'
   ],
   [
     s3bucket + 'backcountry-steort/black.jpg',
@@ -84,17 +86,18 @@ for (var i = 0; i < 100; i++) {
       isUsEu: Math.floor(Math.random() * 2),
       isInStock: Math.floor(Math.random() * 2)
     },
-    images: imagesArray[Math.floor(Math.random() * imagesArray.length)]
+    images: imagesArray[Math.floor(Math.random() * imagesArray.length)],
+    starRating: starRatingArr[Math.floor(Math.random() * 3)]
   })
 }
 
 const seedFunction = () => {
   Item.create(seedData)
-    .then( () => {
+    .then(() => {
       mongoose.connection.close();
       console.log('Database successfully seeded')
     })
-    .catch( err => console.error('Unable to seed database', err))
+    .catch(err => console.error('Unable to seed database', err))
 }
 
 seedFunction();

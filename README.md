@@ -1,13 +1,12 @@
-# Project Name
+# Backend Country
 
-> Project description
+> Frontend Capstone. Practice in building front-end portion of a web app. Will be replicating existing website: https://www.backcountry.com/fjallraven-vidda-pro-pant-mens?skid=FJR00EP-DAROV-USS37EUS54&ti=UExQIENhdDpNZW4ncyBQYW50czoxOjU6YmMtbWVucy1wYW50cw==
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/feat-backendcountry/component-kristina
+  - https://github.com/feat-backendcountry/component-jeremy
+  - https://github.com/feat-backendcountry/component-tim.git
 
 ## Table of Contents
 
